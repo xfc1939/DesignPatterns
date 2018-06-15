@@ -11,6 +11,7 @@ SimpleFactoryContext::~SimpleFactoryContext()
 }
 
 SimpleFactoryBase* SimpleFactoryContext::createInstance(const std::string &str) {
+
 	SimpleFactoryBase* result = NULL;
 	
 	if (str == "A") {
