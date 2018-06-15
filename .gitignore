@@ -1,6 +1,11 @@
 # Prerequisites
 *.d
-
+*sdf
+Debug/
+Release/
+*.sln
+*.vcxproj*
+*.suo
 # Compiled Object files
 *.slo
 *.lo
