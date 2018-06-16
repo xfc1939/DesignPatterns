@@ -1,0 +1,14 @@
+//
+// Created by xfc on 2018/6/15.
+//
+
+#ifndef DESIGNPATTERNS_STRATEGYCONTEXT_H
+#define DESIGNPATTERNS_STRATEGYCONTEXT_H
+
+
+class StrategyContext {
+
+};
+
+
+#endif //DESIGNPATTERNS_STRATEGYCONTEXT_H

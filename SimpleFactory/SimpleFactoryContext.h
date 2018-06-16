@@ -2,7 +2,7 @@
 #include <string>
 #include "FactoryInstance.h"
 #include "SimpleFactoryBase.h"
-
+#ifndef TEMPLATE
 class SimpleFactoryContext
 {
 public:
@@ -11,4 +11,8 @@ public:
 public:
 	SimpleFactoryBase* createInstance(const std::string &str);
 };
+#else
+
+#endif
+
 
