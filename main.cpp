@@ -6,6 +6,8 @@
 #include "SimpleFactory/SimpleFactoryContext.h"
 #include "StrategyPattern/StrategyContext.h"
 #include "DecoratorPattern/Decorator.h"
+#include "ProxyPattern/Proxy.h"
+#include "FactoryMethodPattern/FactoryMethodPattern.h"
 
 // 工厂模式测试
 void SimpleFactoryTest(){
@@ -40,10 +42,24 @@ void DecoratorTest() {
     b->operator()();
 }
 
+// 代理模式测试
+void ProxyTest() {
+    RealSubject *subject = new RealSubject;
+    Proxy *proxy = new Proxy;
+    proxy->setSubject(subject);
+    proxy->request();
+}
+
+// 工厂模式测试
+void FactoryMethodPatternTest(){
+    IFactory *factory = new IFactoryB();
+    Operatorion *oper = factory->createOperatorion();
+    oper->getResult();
+}
 int main(int argc, char* argv[])
 {
 
-    DecoratorTest();
+    FactoryMethodPatternTest();
     int i;
     std::cin >> i;
     return 0;
