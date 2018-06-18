@@ -3,7 +3,7 @@ class SimpleFactoryBase
 {
 public:
 	SimpleFactoryBase();
-	~SimpleFactoryBase();
+	virtual  ~SimpleFactoryBase();
 
 public:
 	virtual int getResult();
