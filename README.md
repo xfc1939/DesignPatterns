@@ -9,5 +9,6 @@
 #### SimpleFactory 简单工厂模式
 #### StrategyPattern 策略模式
 #### TemplatePattern 模板模式
+#### ObsersverPattern 观察者模式
 
 
