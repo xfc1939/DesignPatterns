@@ -10,5 +10,7 @@
 #### StrategyPattern 策略模式
 #### TemplatePattern 模板模式
 #### ObsersverPattern 观察者模式
+#### StatusPattern 状态模式
+#### AdapterPattern 适配器模式
 
 

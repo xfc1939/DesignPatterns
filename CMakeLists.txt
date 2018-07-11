@@ -16,6 +16,9 @@ set(SIMPLEFACTORY_SOURCE_FILE SimpleFactory/FactoryInstance.h SimpleFactory/Inst
 set(STRATEGY_SOURCE_FILE StrategyPattern/StrategyContext.cpp StrategyPattern/StrategyContext.h)
 set(TEMPLATE_SOURCE_FILE TemplatePattern/TemplatePattern.h)
 set(OBSERVER_SOURCE_FILE ObserverPattern/ObserverPattern.h)
+set(STATUS_SOURCE_FILE StatusPattern/StatusPattern.h StatusPattern/StatusPattern.cpp)
+set(ADAPTER_SOURCE_FILE AdapterPattern/AdapterPattern.h)
+
 
 add_executable(AppearanceMode ${APPEARANCE_SOURCE_FILE} Test/AppearanceModeTest.cpp)
 add_executable(BuilderPattern ${BUILDER_SOURCE_FILE} Test/BuilderPatternTest.cpp.cpp)
@@ -27,3 +30,5 @@ add_executable(SimpleFactory ${SIMPLEFACTORY_SOURCE_FILE} Test/SimpleFactoryTest
 add_executable(StrategyPattern ${STRATEGY_SOURCE_FILE} Test/StrategyPatternTest.cpp)
 add_executable(TemplatePattern ${TEMPLATE_SOURCE_FILE} Test/TemplatePatternTest.cpp)
 add_executable(ObserverPattern ${OBSERVER_SOURCE_FILE} Test/ObserverPatternTest.cpp)
+add_executable(StatusPattern ${STATUS_SOURCE_FILE} Test/StatusPatternTest.cpp)
+add_executable(AdapterPattern ${ADAPTER_SOURCE_FILE} Test/AdapterPatternTest.cpp)
