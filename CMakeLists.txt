@@ -18,6 +18,7 @@ set(TEMPLATE_SOURCE_FILE TemplatePattern/TemplatePattern.h)
 set(OBSERVER_SOURCE_FILE ObserverPattern/ObserverPattern.h)
 set(STATUS_SOURCE_FILE StatusPattern/StatusPattern.h StatusPattern/StatusPattern.cpp)
 set(ADAPTER_SOURCE_FILE AdapterPattern/AdapterPattern.h)
+set(MEMENTO_SOURCE_FILE MementoPattern/MementoPattern.h)
 
 
 add_executable(AppearanceMode ${APPEARANCE_SOURCE_FILE} Test/AppearanceModeTest.cpp)
@@ -32,3 +33,4 @@ add_executable(TemplatePattern ${TEMPLATE_SOURCE_FILE} Test/TemplatePatternTest.
 add_executable(ObserverPattern ${OBSERVER_SOURCE_FILE} Test/ObserverPatternTest.cpp)
 add_executable(StatusPattern ${STATUS_SOURCE_FILE} Test/StatusPatternTest.cpp)
 add_executable(AdapterPattern ${ADAPTER_SOURCE_FILE} Test/AdapterPatternTest.cpp)
+add_executable(MementoPattern ${MEMENTO_SOURCE_FILE} Test/MementoPatternTest.cpp)

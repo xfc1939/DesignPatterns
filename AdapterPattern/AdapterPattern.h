@@ -11,6 +11,8 @@
 #ifndef DESIGNPATTERNS_ADAPTERPATTERN_H
 #define DESIGNPATTERNS_ADAPTERPATTERN_H
 
+#include <iostream>
+
 class Target {
 public:
     Target() = default;
@@ -27,7 +29,21 @@ public:
 
 public:
     void specificRequest(){
-        
+        std::cout << __FUNCTION__ << " " << " specificReq " << std::endl;
     }
+};
+
+class Adapter : public Target{
+public:
+    Adapter():adpatee_(new Adaptee) {}
+     ~Adapter () override = default;
+
+public:
+    void Request() override {
+        adpatee_->specificRequest();
+    }
+
+private:
+    Adaptee * adpatee_;
 };
 #endif //DESIGNPATTERNS_ADAPTERPATTERN_H
