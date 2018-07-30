@@ -13,4 +13,5 @@
 #### StatusPattern          状态模式
 #### AdapterPattern         适配器模式
 #### MementoPattern         备忘录模式
+#### CompositePattern       组合模式
 

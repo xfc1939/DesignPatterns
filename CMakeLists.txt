@@ -19,6 +19,7 @@ set(OBSERVER_SOURCE_FILE ObserverPattern/ObserverPattern.h)
 set(STATUS_SOURCE_FILE StatusPattern/StatusPattern.h StatusPattern/StatusPattern.cpp)
 set(ADAPTER_SOURCE_FILE AdapterPattern/AdapterPattern.h)
 set(MEMENTO_SOURCE_FILE MementoPattern/MementoPattern.h)
+set(COMPOSITE_SOURCE_FILE CompositePattern/CompositePattern.h)
 
 
 add_executable(AppearanceMode ${APPEARANCE_SOURCE_FILE} Test/AppearanceModeTest.cpp)
@@ -34,3 +35,4 @@ add_executable(ObserverPattern ${OBSERVER_SOURCE_FILE} Test/ObserverPatternTest.
 add_executable(StatusPattern ${STATUS_SOURCE_FILE} Test/StatusPatternTest.cpp)
 add_executable(AdapterPattern ${ADAPTER_SOURCE_FILE} Test/AdapterPatternTest.cpp)
 add_executable(MementoPattern ${MEMENTO_SOURCE_FILE} Test/MementoPatternTest.cpp)
+add_executable(CompositePattern ${COMPOSITE_SOURCE_FILE} Test/CompositePattern.cpp)
