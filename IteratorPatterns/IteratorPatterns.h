@@ -11,6 +11,9 @@
  * 当你需要访问一个聚类对象，而且不管这些对象是什么都需要遍历的时候，你就应该考虑使用迭代器模式。
  *
  * 为遍历不同的聚类结构提供如开始、下一个、是否结束、当前哪一项等统一的接口。
+ *
+ * 迭代器模式就是分离了集合对象的遍历行为，抽象出一个迭代器类类负责，这样既可以做到不暴露集合的内部结构，
+ * 又可以让外部代码透明的访问集合内部的数据
  */
 
 #include <vector>
@@ -92,7 +95,7 @@ private:
     int currentIndex_;
 };
 template <class T>
-Iterator<T>* ConcreteAggregate<T>::CreateIterator() {
+Iterator<T>* ConcreteAggregate<T>::CreateIterator()  {
     return new ConcreteIterator<T>(this);
 }
 
