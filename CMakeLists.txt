@@ -22,6 +22,9 @@ set(MEMENTO_SOURCE_FILE MementoPattern/MementoPattern.h)
 set(COMPOSITE_SOURCE_FILE CompositePattern/CompositePattern.h)
 set(ITERATOR_SOURCE_FILE IteratorPatterns/IteratorPatterns.h)
 set(SINGLETON_SOURCE_FILE SingletonPattern/SingletonPattern.h)
+set(BRIDGE_SOURCE_FILE BridgePattern/BridgePattern.h)
+set(COMMAND_SOURCE_FILE CommandPattern/CommandPattern.h)
+
 
 
 add_executable(AppearanceMode ${APPEARANCE_SOURCE_FILE} Test/AppearanceModeTest.cpp)
@@ -40,3 +43,5 @@ add_executable(MementoPattern ${MEMENTO_SOURCE_FILE} Test/MementoPatternTest.cpp
 add_executable(CompositePattern ${COMPOSITE_SOURCE_FILE} Test/CompositePattern.cpp)
 add_executable(IteratorPatterns ${ITERATOR_SOURCE_FILE} Test/IteratorPatternsTest.cpp)
 add_executable(SingletonPattern ${SINGLETON_SOURCE_FILE} Test/SingletonPatternTest.cpp)
+add_executable(BridgePattern ${BRIDGE_SOURCE_FILE} Test/BridgePatternTest.cpp)
+add_executable(CommandPattern ${COMMAND_SOURCE_FILE} Test/CommandPatternTest.cpp)

@@ -7,6 +7,11 @@
 
 #include <iostream>
 
+/*
+ * 装饰模式：
+ * 动态地给一个对象添加一些额外的职责，就增加功能而言，装饰模式比生成子类更加灵活
+ */
+
 class Component {
 public:
     Component() = default;
