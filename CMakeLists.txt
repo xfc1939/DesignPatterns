@@ -17,13 +17,16 @@ set(STRATEGY_SOURCE_FILE StrategyPattern/StrategyContext.cpp StrategyPattern/Str
 set(TEMPLATE_SOURCE_FILE TemplatePattern/TemplatePattern.h)
 set(OBSERVER_SOURCE_FILE ObserverPattern/ObserverPattern.h)
 set(STATUS_SOURCE_FILE StatusPattern/StatusPattern.h StatusPattern/StatusPattern.cpp)
-set(ADAPTER_SOURCE_FILE AdapterPattern/AdapterPattern.h)
+set(ADAPTER_SOURCE_FILE AdapterPattern/AdapterPattern.h )
 set(MEMENTO_SOURCE_FILE MementoPattern/MementoPattern.h)
 set(COMPOSITE_SOURCE_FILE CompositePattern/CompositePattern.h)
 set(ITERATOR_SOURCE_FILE IteratorPatterns/IteratorPatterns.h)
 set(SINGLETON_SOURCE_FILE SingletonPattern/SingletonPattern.h)
 set(BRIDGE_SOURCE_FILE BridgePattern/BridgePattern.h)
 set(COMMAND_SOURCE_FILE CommandPattern/CommandPattern.h)
+set(CHAIN_SOURCE_FILE ChainPattern/ChainPattern.h)
+set(AGENCY_SOURCE_FILE AgencyPattern/AgencyPattern.h)
+
 
 
 
@@ -45,3 +48,5 @@ add_executable(IteratorPatterns ${ITERATOR_SOURCE_FILE} Test/IteratorPatternsTes
 add_executable(SingletonPattern ${SINGLETON_SOURCE_FILE} Test/SingletonPatternTest.cpp)
 add_executable(BridgePattern ${BRIDGE_SOURCE_FILE} Test/BridgePatternTest.cpp)
 add_executable(CommandPattern ${COMMAND_SOURCE_FILE} Test/CommandPatternTest.cpp)
+add_executable(ChainPattern ${CHAIN_SOURCE_FILE} Test/ChainPatternTest.cpp)
+add_executable(AgencyPattern ${AGENCY_SOURCE_FILE} Test/AgencyPatternTest.cpp)
