@@ -14,7 +14,7 @@ void test() {
     colleague1.setMediator(&mediator);
     colleague2.setMediator(&mediator);
     colleague1.sendMessage("hello");
-    colleague2.sendMessage("hello");
+    colleague2.sendMessage("hello1");
 }
 
 int main() {
