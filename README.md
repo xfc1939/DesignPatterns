@@ -16,4 +16,4 @@
 #### CompositePattern       组合模式
 #### BridgePattern          桥接模式
 #### CommandPattern         命令模式
-
+#### VistorPattern          访问者模式

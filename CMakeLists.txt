@@ -27,7 +27,8 @@ set(COMMAND_SOURCE_FILE CommandPattern/CommandPattern.h)
 set(CHAIN_SOURCE_FILE ChainPattern/ChainPattern.h)
 set(AGENCY_SOURCE_FILE AgencyPattern/AgencyPattern.h)
 set(FLYWEIGHT_SOURCE_FILE FlyWeightPattern/FlyWeightPattern.h)
-
+set(INTERPRETER_SOURCE_FILE InterpreterPattern/InpterpreterPattern.h)
+set(VISITOR_SOURCE_FILE  VisitorPattern/VisitorPattern.h)
 
 
 
@@ -52,3 +53,5 @@ add_executable(CommandPattern ${COMMAND_SOURCE_FILE} Test/CommandPatternTest.cpp
 add_executable(ChainPattern ${CHAIN_SOURCE_FILE} Test/ChainPatternTest.cpp)
 add_executable(AgencyPattern ${AGENCY_SOURCE_FILE} Test/AgencyPatternTest.cpp)
 add_executable(FlyWeightPattern ${FLYWEIGHT_SOURCE_FILE} Test/FlyWeightPatternTest.cpp)
+add_executable(InterpreterPattern ${INTERPRETER_SOURCE_FILE} Test/InterpreterPatternTest.cpp)
+add_executable(VisitorPattern ${VISITOR_SOURCE_FILE} Test/VisitorPatternTest.cpp)
